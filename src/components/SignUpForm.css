@@ -1,0 +1,36 @@
+.signup {
+    background-image: url('https://shorturl.at/yRVwD');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 9999;
+  }
+  
+  .signup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -9999; 
+  }
+  
+  .signup__container {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signup__title {
+    margin-bottom: 20px;
+  }
+  

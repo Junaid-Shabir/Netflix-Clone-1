@@ -1,0 +1,77 @@
+  body{
+    background-color: black;
+    overflow-x: hidden;
+    color: black !important;
+  }
+
+
+
+  /* Movie container styles */
+.movie-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-container img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.movie-container:hover img {
+  transform: scale(1.1); /* Zoom in */
+  opacity: 0.3 /* Reduce opacity */
+}
+
+.movie-container .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem; /* Adjust size of the play icon */
+  color: white;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.movie-container:hover .play-icon {
+  opacity: 1; /* Show the play icon on hover */
+  
+  
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+/* NavBar  */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li span {
+  margin-right: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+}
+/* NavBar  */
